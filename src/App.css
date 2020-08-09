@@ -1,3 +1,8 @@
+
+body{
+  background-color:#d8d2d2;
+  z-index:-1;
+}
 .App {
   text-align: center;
 }
@@ -12,7 +17,61 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* 
+@media only screen and (max-width:700px){
+  .container{
+    float:none;
+    width:100%;
+  }
+} */
 
+.container {
+  margin-top:28px;
+  margin-left:28px;
+}
+.selected {
+  background-color: #a6eaa6;
+}
+.bttn{
+      width: 30%;
+    margin-right: 12px;
+    margin-left: 22px;
+}
+.val1{
+  margin-right:12px;
+  margin-left: 46px;
+}
+
+.val2{
+  margin-right:12px;
+  margin-left: 46px;
+}
+.column2{
+  width:calc(100% - 270px);
+  float:left;
+
+}
+.column1{
+  float:left;
+  width:256px;
+  margin-right:12px;
+  z-index: 2;
+  background-color: white;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+.col{
+  width:21%;
+  float:left;
+  margin-right:15px;
+  margin-left:15px;
+  margin-bottom:30px;
+  margin-top:15px;
+  z-index:1;
+  background-color:white;
+  overflow:hidden;
+  border-radius: 8px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +94,63 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 700px)  {
+  .column2{
+width: 100%;
+    margin: 45px auto;
+    text-align: center;
+    clear: both;
+}
+  .column1{
+  float:none;
+  width:250px;
+  margin:30px auto;
+}
+.col{
+  width:48%;
+  float:left;
+  margin-right:12px;
+  margin-bottom:30px;
+}
+.col:nth-child(even){
+  margin-right:0;
+}
+
+}
+
+@media only screen and (max-width: 699px) and (min-width: 320px)  {
+
+.column2{
+width:100%
+}
+  .column1{
+  float:none;
+  width:250px;
+  margin:10px auto;
+}
+.filter{
+  margin-left:12px;
+}
+.col{
+  width:100%;
+  float:none;
+margin:30px auto;
+text-align:center;
+margin-botton:30px;
+}
+}
+
+.img {
+  background-color:#d8d2d2;
+  position: relative;
+  left: 20px;
+  top: 20px;
+
+}
+
+.col h4{
+  position: relative;
+  left: 20px;
 }
