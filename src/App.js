@@ -33,7 +33,7 @@ var [url, setUrl] = useState(durl);
   return ( 
     <div className="container">
     <div>
-    <h2>SpacEx Launch programs</h2>
+    <h1>SpacEx Launch programs</h1>
     </div>
     <div className="column1"> 
     < Leftpanel  getUrl={getUrl}  />

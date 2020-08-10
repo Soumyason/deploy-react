@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-
-
-
 function Leftpanel(props) {
     
     const [stateparams, setStateparams] = useState({
@@ -14,21 +11,13 @@ function Leftpanel(props) {
         props.getUrl(stateparams.selectedYear, stateparams.selectedLaunch, stateparams.selectedLand );
    },[stateparams.selectedYear, stateparams.selectedLaunch, stateparams.selectedLand])
 
-    
-
-    
-
      const handleYearClick = event => {
           console.log('selectedYear *   '+event.target.innerText );
           var stateCopy = Object.assign({},stateparams);
           stateCopy.selectedYear = event.target.innerText;
           console.log('stateCopy' + JSON.stringify(stateCopy));
-          setStateparams(stateCopy);
-        
-         
+          setStateparams(stateCopy); 
      }
-
-     
 
      const handleLaunchClick = event =>{
           console.log('selectedLaunch *   '+event.target.innerText);
@@ -45,8 +34,6 @@ function Leftpanel(props) {
           setStateparams(stateCopy);
      }
     
-  
-
     return(
         <React.Fragment>
         <h4 className="filter">Filters</h4>
